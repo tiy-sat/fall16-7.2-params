@@ -2,9 +2,6 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 import App from './App'
-import Welcome from './Welcome'
-import Dashboard from './Dashboard'
-import Post from './Post'
 
 // https://github.com/ReactTraining/react-router
 // https://github.com/ReactTraining/react-router/blob/master/docs/API.md
@@ -15,9 +12,6 @@ render(
   (
     <Router history={hashHistory}>
       <Route component={App}>
-        <Route path="/" component={ Welcome } />
-        <Route path="/dashboard" component={ Dashboard } />
-        <Route path="/post" component={ Post } />
       </Route>
     </Router>
   ),
