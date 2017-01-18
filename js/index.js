@@ -2,6 +2,8 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 import App from './App'
+import Landing from './Landing'
+import Project from './Project'
 
 // https://github.com/ReactTraining/react-router
 // https://github.com/ReactTraining/react-router/blob/master/docs/API.md
@@ -12,6 +14,8 @@ render(
   (
     <Router history={hashHistory}>
       <Route component={App}>
+        <Route path="/" component={Landing} />
+        <Route path="/project/:name/:url" component={Project} />
       </Route>
     </Router>
   ),

@@ -3,3 +3,7 @@
 .output--red {
   color: red;
 }
+
+.link--project {
+  display: block;
+}
